@@ -41,6 +41,10 @@ public class Transaction {
         this.amount = amount;
     }
 
+    public long getId() {
+        return senderId; // Using senderId as the transaction ID for now
+    }
+
     @Override
     public String toString() {
         return "Transaction {senderId=" + senderId + ", recipientId=" + recipientId + ", amount=" + amount + "}";
